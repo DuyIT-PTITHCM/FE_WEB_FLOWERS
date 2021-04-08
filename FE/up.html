@@ -1,0 +1,49 @@
+<!-- !DOCTYPE html
+html
+head
+script src=httpsajax.googleapis.comajaxlibsjquery3.5.1jquery.min.jsscript
+script
+
+
+$(document).ready(function(){
+  $( #myfile ).change(function() {
+	var base64='';
+    var files = $(this)[0].files[0];
+    if(files != undefined){
+    console.log(vo day r);
+    	var reader = new FileReader();
+        console.log(reader);
+        reader.onload = function(e){
+        	base64 = e.target.result;
+            console.log(base64);
+        };
+        	reader.readAsDataURL(files);
+        }
+	});
+
+});
+
+script
+head
+body
+
+h1This is a headingh1
+input type=file id=myfile name=myfilebrbr
+pThis is a paragraphp
+buttonThis is a buttonbutton
+pThe heading, paragraph and button element have a click event defined. Click on each element to display which element triggered the event.p
+div style=colorblue;div
+
+body
+html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="http://localhost:8088/getimg/wkLl1GFhgjPcbRBFqbpm5A569I8cO9I5LDwPMKobMaHoDNoMWygaixinh.jpg" alt="" width="500px" height="100px">
+</body>
+</html>
